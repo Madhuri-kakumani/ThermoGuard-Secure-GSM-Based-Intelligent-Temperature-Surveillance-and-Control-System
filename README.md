@@ -569,11 +569,11 @@ It demonstrates practical implementation of **Embedded C, ARM7 architecture, ADC
 
 ## 👨‍💻 Author
 
-### **SHALINI SIRIKONDA**
+### **MADHURI KAKUMANI**
 
 **Electronics and Communication Engineering**
 
-**Malla Reddy College of Engineering and Technology**
+**Andhra Loyola Institute Engineering and Technology**
 
 ---
 
