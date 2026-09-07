@@ -314,37 +314,35 @@ The system verifies the passkey and sends the current sensor information through
 ## 🔄 Remote Monitoring Workflow
 
 ```text
-             START
+            START
                │
                ▼
       Initialize Peripherals
                │
                ▼
-       Read LM35 Temperature
-               │
-               ▼
-          Display on LCD
-               │
-               ▼
-      Read Set Point from EEPROM
-               │
-               ▼
-       Compare Temperature
-               │
-        ┌──────┴──────┐
-        │             │
-      Above         Normal
-     Set Point       Range
-        │             │
-        ▼             │
-    Buzzer ON         │
-        │             │
-        ▼             │
-    Send Alert SMS    │
-        │             │
-        └──────┬──────┘
-               │
-               ▼
+       Read LM35 Temperature ◄──────────────┐
+               │                            │
+               ▼                            │
+          Display on LCD                    │
+               │                            │
+               ▼                            │
+      Read Set Point from EEPROM            │
+               │                            │
+               ▼                            │
+       Compare Temperature                  │
+               │                            │
+        ┌──────┴──────┐                     │
+        │             │                     │
+      Above         Normal                  │
+     Set Point       Range ─────────────────┘
+        │
+        ▼
+    Buzzer ON
+        │
+        ▼
+    Send Alert SMS
+        │
+        ▼
        Check Incoming SMS
                │
                ▼
@@ -488,7 +486,7 @@ Verify GSM communication using AT commands before integrating the GSM module wit
 
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/569a8857-403a-4623-be72-ce1f0a7d6279" />
 
-**Figure 3. LCD Temperature Monitoring Output**
+**Figure 3.Temperature Monitoring Output**
 
 ---
 
@@ -575,25 +573,6 @@ It demonstrates practical implementation of **Embedded C, ARM7 architecture, ADC
 **Electronics and Communication Engineering**
 
 **Andhra Loyola Institute Engineering and Technology**
-
----
-
-## 📌 Project Information
-
-| Details                  | Information                   |
-| ------------------------ | ----------------------------- |
-| **Project Name**         | ThermoGuard                   |
-| **Project Type**         | Embedded Systems / ARM7 / GSM |
-| **Microcontroller**      | LPC2148                       |
-| **Programming Language** | Embedded C                    |
-| **GSM Module**           | M660A                         |
-| **Temperature Sensor**   | LM35                          |
-| **Display**              | 16×2 LCD                      |
-| **EEPROM**               | AT24LC256                     |
-| **Communication**        | GSM / UART                    |
-| **EEPROM Interface**     | I²C                           |
-| **Development Tool**     | Keil C Compiler               |
-| **Programming Tool**     | Flash Magic                   |
 
 ---
 
