@@ -40,7 +40,8 @@ To develop an intelligent and secure GSM-based temperature surveillance and cont
 
 The ThermoGuard system is built around the **LPC2148 ARM7 microcontroller**, which coordinates temperature sensing, display, GSM communication, EEPROM storage, keypad input, external interrupts, and alert generation.
 
-<img width="2720" height="2240" alt="lpc2148_system_block_diagram" src="https://github.com/user-attachments/assets/f0daa1b4-4eb8-4091-b1e4-0e116e8b46c2" />
+<img width="2720" height="2560" alt="system_block_diagram_updated" src="https://github.com/user-attachments/assets/0617d45e-105e-4935-bce6-1115d3ef6efe" />
+
 
 
 **Figure 1. ThermoGuard System Architecture**
