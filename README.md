@@ -8,7 +8,7 @@ An intelligent GSM-based embedded temperature surveillance and control system de
 
 **ThermoGuard** is a real-time embedded temperature monitoring and control system designed for environments where temperature must be continuously monitored and maintained within safe limits.
 
-The system uses an **LM35 temperature sensor** interfaced with the **LPC2148 ARM7 microcontroller**. The measured temperature is displayed on a **16×2 LCD** and continuously compared with a predefined temperature set point stored in **AT24LC256 EEPROM**.
+The system uses an **LM35 temperature sensor** interfaced with the **LPC2148 ARM7 microcontroller**. The measured temperature is displayed on a **16×2 LCD** and continuously compared with a predefined temperature set point stored in **AT24C256 EEPROM**.
 
 When the temperature exceeds the configured threshold, the system activates a **buzzer** and sends an alert SMS to the authorized mobile number through the **M660A GSM module**.
 
@@ -56,7 +56,7 @@ The ThermoGuard system is built around the **LPC2148 ARM7 microcontroller**, whi
 | **16×2 LCD**           | Temperature and status display     |
 | **LM35**               | Temperature sensing                |
 | **Buzzer**             | Temperature alert indication       |
-| **AT24LC256**          | EEPROM configuration storage       |
+| **AT24C256**          | EEPROM configuration storage       |
 | **Switch**             | External interrupt trigger         |
 | **Keypad**             | Password and local set-point entry |
 
@@ -65,7 +65,7 @@ The ThermoGuard system is built around the **LPC2148 ARM7 microcontroller**, whi
 ## 💻 Software Requirements
 
 * **Embedded C**
-* **Keil C Compiler / Keil µVision**
+* **Keil µVision**
 * **Flash Magic**
 * UART interrupt programming
 * I²C communication
@@ -132,7 +132,7 @@ The system supports:
 
 ### 5️⃣ 💾 EEPROM Module
 
-The **AT24LC256 EEPROM** is used for storing important configuration information.
+The **AT24C256 EEPROM** is used for storing important configuration information.
 
 Stored information can include:
 
@@ -558,7 +558,7 @@ Possible future improvements include:
 
 **ThermoGuard: Secure GSM-Based Intelligent Temperature Surveillance and Control System** demonstrates the integration of embedded systems with GSM-based remote communication and secure access control.
 
-The system combines the **LPC2148 ARM7 microcontroller, LM35 temperature sensor, M660A GSM module, 16×2 LCD, AT24LC256 EEPROM, keypad, external interrupts, buzzer, UART, I²C, and ADC**.
+The system combines the **LPC2148 ARM7 microcontroller, LM35 temperature sensor, M660A GSM module, 16×2 LCD, AT24C256 EEPROM, keypad, external interrupts, buzzer, UART, I²C, and ADC**.
 
 The project provides real-time temperature surveillance, automatic alert generation, secure remote configuration, and authenticated local set-point modification.
 
